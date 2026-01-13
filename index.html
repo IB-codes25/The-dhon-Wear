@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dhon Brand| Premium Unisex T-Shirts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #C5A059;
+            --black: #0A0A0A;
+            --white: #FFFFFF;
+            --beige: #F9F7F2;
+            --dark-grey: #1C1C1C;
+            --transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+             border-radius: 50px
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; border-radius: 50;}
+        body { font-family: 'Inter', sans-serif; background-color: var(--white); color: var(--black); line-height: 1.6; overflow-x: hidden;
+               border-radius: 50;
+         }
+        
+        h1, h2, h3, .logo { font-family: 'Playfair Display', serif; 
+           border-radius: 50;}
+
+        /* Navigation */
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 25px 8%; background: rgba(255,255,255,0.95);
+            position: sticky; top: 0; z-index: 1000;
+            backdrop-filter: blur(8px); border-bottom: 1px solid rgba(0,0,0,0.05);
+               border-radius: 50;
+        }
+        .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: 2px; text-decoration: none; color: var(--black); }
+        .logo span { color: var(--gold);   border-radius: 50; }
+
+        /* Hero */
+        .hero {
+            height: 70vh; position: relative; display: flex; align-items: center; justify-content: center;   border-radius: 50;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(dw.jpg);   border-radius: 50;
+            background-size: cover; background-position: center; color: var(--white); text-align: center;border-radius: 50;
+            border-radius: 50px;
+        }
+        .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 20px; font-style: italic;   border-radius: 50; }
+
+        /* 30-Slot Grid Section */
+        section { padding: 80px 8%; background: var(--white); color:#C5A059; }  .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header p { text-transform: uppercase; color: var(--gold); letter-spacing: 3px; font-size: 0.8rem; font-weight: 600; }
+        .section-header h2 { font-size: 2.5rem; color: black; margin-top: 10px;
+               border-radius: 50px;
+     }
+
+        .collection-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+            gap: 20px;border-radius: 50;
+
+
+        }
+
+        /* Link wrapping the item */
+        .whatsapp-purchase-link { text-decoration: none; color: inherit; display: block;border-radius: 50; }
+
+        .col-item { 
+            height: 400px; 
+            position: relative; 
+            overflow: hidden; 
+            background: #222; 
+            border: 1px solid #333; 
+            transition: var(--transition); 
+            border-radius: 50px;
+        }
+        
+        .col-item img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: var(--transition); 
+            opacity: 0.8;
+            border-radius: 50px; 
+        }
+        
+        .col-item:hover img { transform: scale(1.05); opacity: 1; }
+        .col-item:hover { border-color: var(--gold);border-radius: 50; }
+
+        .col-overlay { 
+            position: absolute; 
+            inset: 0; 
+            background: linear-gradient(transparent, rgba(0,0,0,0.9)); 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: flex-end; 
+            padding: 20px; 
+            color: white; 
+            border-radius: 50;
+
+        }
+        
+        .col-overlay h3 { font-size: 1.1rem; }
+        .col-overlay span { color: var(--gold); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; font-type:bold;}
+        .buy-tag { 
+            position: absolute; 
+            top: 20px; 
+            right: 20px; 
+            background: var(--gold); 
+            color: white; 
+            padding: 5px 10px; 
+            font-size: 0.7rem; 
+            font-weight: bold; 
+            z-index: 10; 
+            border-radius: 50;
+        }
+
+        
+        .col-overlay h3 { font-size: 1.1rem; margin-bottom: 5px; }
+        .col-overlay span { color: var(--gold); font-size: 0.8rem; font-weight: 600; text-transform: uppercase;border-radius: 50; }
+        .buy-tag { position: BOLD; top: 20px; right: 20px; background: var(white); color: white; padding: 5px 10px; font-size: 0.7rem; font-weight: bold;
+               border-radius: 50;
+         }
+
+        /* Footer */
+        footer { background: var(--black); color: #888; padding: 40px 8%; text-align: center; border-top: 1px solid #222; }
+           border-radius: 50px;
+
+        @media (max-width: 600px) {
+            .collection-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .col-item { height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">THE DHON <span>BRAND</span></a>
+        <div style="font-size: 1.1rem; letter-spacing: 1px; color: var(grey); font-weight: 6000;"><B>CLICK ANY ITEM TO ORDER VIA WHATSAPP</B></div>
+    </nav>
+    </head>
+<body>
+
+   
+
+    <header class="hero">
+        <div class="hero-content"border-radius: 5px>
+            <p style="letter-spacing: 3px; text-transform: uppercase; font-size: 1.9rem;">Modern Thrift Fashion</p>
+            <h1>The Dhon Premium T-Shirts</h1>
+            <a href="#designs" style="background: var(--gold); color: white; padding: 13px 50px;  text-decoration: none; font-weight: 1600; display: inline-block; margin-top: 40px;">SHOP THE COLLECTION</a>
+    </header>
+
+<section id="designs">
+        <div class="section-header">
+            <br>
+            <h1>UNIQUE STYLES OF THE DHON BRAND</h1>
+            <h2>The T-Shirt Gallery</h2>
+        </div>
+
+        <div class="collection-grid">
+            
+            <a href="https://wa.me/233598565420?text=Hello%20The%20Dhons%20Wear,%20I%20want%20to%20purchase%20Item%2001%20(Signature%20Tee)" class="whatsapp-purchase-link" target="_blank">
+                <div class="col-item">
+                    <div class="buy-tag">TAP TO BUY</div>
+                    <img src="brand1.jpg" alt="Style 1">
+                    <div class="col-overlay"><span>₵95.99</span><h3>Signature Tee</h3></div>
+                </div>
+            </a>
+
+            <a href="https://wa.me/233598565420?text=Hello%20The%20Dhons%20Wear,%20I%20want%20to%20purchase%20Item%2002%20(Heritage%20Black)" class="whatsapp-purchase-link" target="_blank">
+                <div class="col-item">
+                    <div class="buy-tag">TAP TO BUY</div>
+                    <img src="don.jpeg" alt="Style 2">
+                    <div class="col-overlay"><span>Style 2</span><h3>Heritage Black</h3></div>
+                </div>
+            </a>
+
+            <a href="https://wa.me/233595389224?text=Hello%20The%20Dhons%20Wear,%20I%20want%20to%20purchase%20Item%2003%20(Urban%20White)" class="whatsapp-purchase-link" target="_blank">
+                <div class="col-item">
+                    <div class="buy-tag">TAP TO BUY</div>
+                    <img src="wwhite.jpeg" alt="Style 3">
+                    <div class="col-overlay"><span>Style 3</span><h3>Urban White</h3></div>
+                </div>
+            </a>
+
+         <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2004" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="pinkk.jpeg" alt="Style 4"><div class="col-overlay"><span>Style 4</span><h3>Pink Tee</h3></div></div>
+            </a>
+
+            <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2005" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="cream.jpeg" alt="Style 5"><div class="col-overlay"><span>Style 5</span><h3>CreamTee</h3></div></div>
+            </a>
+
+            <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2006" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="h black.jpeg" alt="Style 6"><div class="col-overlay"><span>Style 6</span><h3>Heritage Black Tee</h3></div></div>
+            </a>
+
+            <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2007" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="street wear.jpeg" alt="Style 4"><div class="col-overlay"><span>Style 7</span><h3>Street wear Tee</h3></div></div>
+            </a>
+
+            <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2008" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="cotton.jpeg" alt="Style 5"><div class="col-overlay"><span>Style 8</span><h3>pinkky Tee</h3></div></div>
+            </a>
+             <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2009" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="move on.jpeg" alt="Style 5"><div class="col-overlay"><span>Style 9</span><h3>Move on white Tee</h3></div></div>
+            </a>
+             <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2010" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="white.jpeg" alt="Style 5"><div class="col-overlay"><span>Style 10</span><h3>Premium white Tee</h3></div></div>
+            </a>
+                <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2011" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="coffeeeee.jpg" alt="Style 5"><div class="col-overlay"><span>Style 11</span><h3>Premium cream Tee</h3></div></div>
+            </a>
+
+    <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2012" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="norbert.jpg" alt="Style 5"><div class="col-overlay"><span>Style 12</span><h3>Premium  Tee</h3></div></div>
+            </a>
+
+    <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2013" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="3 brand.jpg" alt="Style 5"><div class="col-overlay"><span>Style 13</span><h3>Premium Tee</h3></div></div>
+            </a>
+            <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2014" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="moto.jpg" alt="Style 5"><div class="col-overlay"><span>Style 14</span><h3>Premium Tee</h3></div></div>
+            </a>
+            <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2015" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="brand2.jpg" alt="Style 5"><div class="col-overlay"><span>Style 15</span><h3>Premium limitless Tee</h3></div></div>
+            </a>
+            <a href="https://wa.me/233595389224?text=Hello,%20I%20want%20to%20order%20Style%2016" class="whatsapp-purchase-link">
+                <div class="col-item"><div class="buy-tag">BUY</div><img src="robbie.jpg" alt="Style 5"><div class="col-overlay"><span>Style 16</span><h3>Premium Tee</h3></div></div>
+            </a>
+
+        </div>
+       <var>
+        <br>
+        <br>
+        <br>
+   
+   <section id="reviews" class="reviews-section" style="padding: 60px 8%; background: #f4f7f6; text-align: center;">
+    <div class="section-header" style="margin-bottom: 40px;">
+       <b> <p style="text-transform: uppercase; color: #C5A059; letter-spacing: 2px; font-weight: 600;">The Experience</p></b>
+        <h2 style="bold: 'bold', serif; font-size: 2.5rem; color: #0A0A0A;">Trusted by Many</h2>
+    </div>
+    
+    <div class="review-card" style="max-width: 800px; margin: 0 auto; background:white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <div class="stars" style="color: #C5A059; margin-bottom: 20px; font-size: 1.2rem;">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <div class="review-text" style="font-style:; font-size: 1.1rem; line-height: 1.8; color: #333; margin-bottom: 20px;">
+            Excellent customer service and truly unique designs. It was worth the travel from the other side of Accra just to experience their bespoke service.
+        </div>
+        <p style="font-weight: bold; color: #0A0A0A;">IB, <span style="font-weight: 400; color: #777;">Verified Client</span></p>
+    </div>
+</section>
+
+<section id="visit" style="padding: 80px 8%; background: #ffffff;">
+    <div class="contact-hub" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+        
+        <div class="info-card" style="background: #1C1C1C; color: white; padding: 40px; border-radius: 13px;">
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 30px; color: #C5A059;">THE HUB</h3>
+            
+            <div class="info-item" style="margin-bottom: 25px;">
+                <h4 style="color: #C5A059; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 10px;">Location</h4>
+                <p style="font-size: 1rem; opacity: 0.9;">Darkuman, Accra, Ghana<br><small>Plus Code:GR26+4M Accra, Ghana</small></p>
+            </div>
+            
+            <div class="info-item" style="margin-bottom: 25px;">
+                <h4 style="color: #C5A059; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 10px;">Contact</h4>
+                <p style="font-size: 1rem; opacity: 0.9;">0595389224<br>support@dhonwearghana.com</p>
+            </div>
+            
+            <div class="info-item" style="margin-bottom: 30px;">
+                <h4 style="color: #C5A059; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 10px;">Hours</h4>
+                <p style="font-size: 1rem; opacity: 0.9;">Opens Daily: 10:00 AM — Late</p>
+            </div>
+            
+            <a href="tel:0595389224" class="btn-gold" style="display: block; background: #C5A059; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 2px; transition: 1.3s;">Book a Fitting</a>
+        </div>
+        
+        <div class="map-box" style="height: 100%; min-height: 450px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.669614457317!2d-0.2119!3d5.617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzcnMDEuMiJOIDDCsDEyJzQyLjgiVw!5e0!3m2!1sen!2sgh!4v1614000000000!5m2!1sen!2sgh" width="100%" height="100%" style="border:4; border-radius: 13px; min-height: 450px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer style="background: #0A0A0A; color: #888; padding: 60px 8% 20px; text-align: center; border-top: 1px solid #222;">
+    <a href="#" class="footer-logo" style="font-family: 'new times roman', serif; font-size: 1.8rem; text-decoration: none; color: white; letter-spacing: 2px; display: block; margin-bottom: 30px;">THE DHON <span style="color: #C5A059;">BRAND</span></a>
+    
+    <div class="socials" style="margin-bottom: 30px;">
+        <a href="#" style="color: white; margin: 0 15px; font-size: 1.2rem; transition: 0.3s;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: white; margin: 0 15px; font-size: 1.2rem; transition: 0.3s;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: white; margin: 0 15px; font-size: 1.2rem; transition: 0.3s;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: white; margin: 0 15px; font-size: 1.2rem; transition: 0.3s;"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" style="color: white; margin: 0 15px; font-size: 1.2rem; transition: 0.3s;"><i class="fab fa-telegram"></i></a>
+        <a href="#" style="color: white; margin: 0 15px; font-size: 1.2rem; transition: 0.3s;"><i class="fab fa-snapchat"></i></a>
+    </div>
+    <p class="copy" style="font-size: 0.9rem; line-height: 1.6;">
+        © 2026 THE DHON BRAND. ALL RIGHTS RESERVED. <br> 
+        <span style="color: #555;">Modern African Fashion, Crafted with Identity.</span>
+    </p>
+    <div style="margin-top: 40px; font-size: 0.7rem; color: #444; text-transform: uppercase; letter-spacing: 1px;">
+        Created by IB
+    </div>
+</footer>
+</body>
+</html>
